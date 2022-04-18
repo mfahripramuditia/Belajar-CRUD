@@ -11,12 +11,15 @@
     <title>Belajar CRUD!</title>
   </head>
   <body>
-    <h1>Daftar Mahasiswa</h1>
+    <div class="container text-center mt-5">
+        <h1>DAFTAR MAHASISWA</h1>
+    </div> 
+    
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-10">
-                <table class="table">
+        <div class="row justify-content-center m-5">
+            <div class="col-md-10 border shadow">
+                <table class="table table-bordered border-danger text-center mt-3">
                     <thead>
                          <tr>
                             <th scope="col">No.</th>
@@ -24,14 +27,17 @@
                             <th scope="col">Alamat</th>
                             <th scope="col">Tempat Tanggal Lahir</th>
                             <th scope="col">Foto</th>
+                            <th scope="col">Actions</th>
                          </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
+                            <td>Muhammad Fahri Pramuditia</td>
+                            <td>Lubuk Pakam</td>
+                            <td>Lubuk Pakam</td>
                             <td>@mdo</td>
+                            <td><a class="btn btn-primary" href="#" role="button">Ubah</a> | <a class="btn btn-danger" href="#" role="button">Hapus</a></td>
                         </tr>
                     </tbody>
                 </table>
