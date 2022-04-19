@@ -24,8 +24,8 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row text-center m-5">
+            <div class="col-12">
                 <a class="btn btn-primary" href="tambah.php" role="button">Tambah Data</a>
             </div>
         </div>

@@ -16,4 +16,26 @@ function query ($query) {
 }
 
 
+function insert ($data) {
+    global $conn;
+
+    //ambil data dari form
+
+    $nama = htmlspecialchars ($data["nama"]);
+    $alamat = htmlspecialchars($data["alamat"]);
+    $ttl = htmlspecialchars($data["ttl"]);
+    $foto = htmlspecialchars($data["foto"]);
+    
+
+    $query =  "INSERT INTO mahasiswa
+                VALUES
+                ('','$nama','$alamat','$ttl','$foto')
+    ";
+
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+    
+}
+
 ?>
