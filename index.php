@@ -24,6 +24,15 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <a class="btn btn-primary" href="tambah.php" role="button">Tambah Data</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
         <div class="row justify-content-center m-5">
             <div class="col-md-10 border shadow">
                 <table class="table table-bordered border-danger text-center mt-3">
@@ -46,7 +55,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                             <td><?= $row ["alamat"]; ?></td>
                             <td><?= $row ["ttl"]; ?></td>
                             <td><img src="img/<?php echo $row ["foto"]; ?>" width="80"></td>
-                            <td><a class="btn btn-primary" href="#" role="button">Ubah</a> | <a class="btn btn-danger" href="#" role="button">Hapus</a></td>
+                            <td><a class="btn btn-outline-primary" href="#" role="button">Ubah</a> | <a class="btn btn-outline-danger" href="#" role="button">Hapus</a></td>
                         </tr>
                         <?php $i++; ?>
                         <?php endforeach; ?>
