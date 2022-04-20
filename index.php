@@ -55,7 +55,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
                             <td><?= $row ["alamat"]; ?></td>
                             <td><?= $row ["ttl"]; ?></td>
                             <td><img src="img/<?php echo $row ["foto"]; ?>" width="80"></td>
-                            <td><a class="btn btn-outline-primary" href="#" role="button">Ubah</a> | <a class="btn btn-outline-danger" href="#" role="button">Hapus</a></td>
+                            <td><a class="btn btn-outline-primary" href="#" role="button">Ubah</a> | <a class="btn btn-outline-danger" href="delete.php?id=<?= $row ["id"];?>" onclick="return confirm ('Yakin Ngehapus ??');" role="button">Hapus</a></td>
                         </tr>
                         <?php $i++; ?>
                         <?php endforeach; ?>

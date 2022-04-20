@@ -69,7 +69,7 @@ if( isset ($_POST["submit"])) {
                 <div class="container mt-5">
                     <div class="row text-center">
                         <div class="col-md-12">
-                        <button type="submit" name="submit" class="btn-primary">
+                        <button type="submit" name="submit" class="btn btn-primary">
                             Tambah Data Mahasiswa
                         </button>
                         </div>
